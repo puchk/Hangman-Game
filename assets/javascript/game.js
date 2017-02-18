@@ -40,7 +40,7 @@ function startGame(){
 	document.getElementById('loser').innerHTML = losses;
 	document.getElementById('blankWord').innerHTML = chosenWordSpaces.join(" ");
 	document.getElementById('guessesLeft').innerHTML = numGuesses;
-	document.getElementById('wrongLetters').innerHTML = wrongGuesses;
+	document.getElementById('wrongLetters').innerHTML = wrongGuesses.join(" ");
 }
 
 function endGame() {
@@ -104,7 +104,7 @@ document.onkeyup = function(event){
 		numGuesses--;
 		wrongGuesses.push(guess);
 		document.getElementById('guessesLeft').innerHTML = numGuesses;
-		document.getElementById('wrongLetters').innerHTML = wrongGuesses;
+		document.getElementById('wrongLetters').innerHTML = wrongGuesses.join(" ");
 		hit.play();
 	}
 	// Checks if you win or lose

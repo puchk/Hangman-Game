@@ -3,7 +3,7 @@ HW_Hangman-Game
 Live Link
     https://puchk.github.io/Hangman-Game/
 
-Description on how to use the app
+*Description on how to use the app
     -Try to guess what the word is by typing letters on your keyboard.
     -You get 9 wrong guesses
 

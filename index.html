@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mario Hangman</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<audio src="assets/audio/marioThemeSong.mp3" autoplay="" loop="" id="themeSong"></audio>
+			<a onClick="togglePlay()" class="glyphicon glyphicon-music pull-right"></a>
+		</div>
+		<div class="row">
+			<h1 id="banner" class="center-block">Mario Hangman</h1>
+		</div>
+		<div class="row">
+			<p id="guessToStart">Press a letter to guess!</p>
+		</div>
+		<div class="row">
+			<p>Wins: <span id="winner"></span></p>
+		</div>
+		<div class="row">
+			<p>Losses: <span id="loser"></span></p>
+		</div>	
+		<div class="row">
+			<p>Guesses Left: <span id="guessesLeft"></span></p>
+		</div>
+		<div class="row">
+			<p>Wrong letters: <span id="wrongLetters"></span></p>
+		</div>
+		<div class="row">
+			<h3 id="blankWord" class="center-block text-center"></h3>
+		</div>
+	</div>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>

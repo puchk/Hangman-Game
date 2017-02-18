@@ -1,0 +1,79 @@
+@font-face {
+font-family: 'Super Mario Bros Alphabet';
+font-style: normal;
+font-weight: normal;
+src: local('Super Mario Bros Alphabet'), url('../fonts/smbfont.woff') format('woff');
+}
+
+body {
+	margin:0;
+	padding:0;
+	background: url("../image/marioStage.jpg") no-repeat center center fixed;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 24px;
+
+}
+
+#banner {
+	font-family: 'Super Mario Bros Alphabet';
+	font-size: 110px;
+	-webkit-text-fill-color: rgb(255,221,201);
+	text-shadow: 0 10px black, 2px 5px black;
+	letter-spacing: 3px;
+	text-align: center;
+	background: rgb(221,89,24);
+	height: 130px;
+	width: 500px;
+	line-height: 130px;
+	vertical-align: middle;
+	border-top: 3px solid white;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	border-left: 3px solid white;
+	margin-bottom: 20px;
+}
+
+#guessToStart {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	font-size: 40px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.glyphicon-music {
+	color: black;
+	margin-top: 10px;
+	font-size: 35px;
+}
+
+.marioBlock {
+	width: 60px;
+	margin: 0 5px;
+}
+
+.newBlock {
+    position: relative;
+    width: 60px;
+}
+
+.inlineStyle {
+	   display: inline-block;
+	   position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    right:25px;
+    font-size: 40px;
+    z-index: 100;
+    font-weight: bold;
+}

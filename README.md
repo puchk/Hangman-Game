@@ -30,7 +30,7 @@ Code Explanation
 
 Instead of using underscores and letters to display blanks and correct letters, I instead used images and put text on those images. InnerHTML only transfers text so I placed HTML code inside a variable.
 
-for (i = 0; i < chosenWord.length; i++) {
+'for (i = 0; i < chosenWord.length; i++) {
 		chosenWordSpaces[i] = "<div class='inlineStyle'><img src='assets/image/emptyBlock.gif' alt='' class='img-responsive marioBlock newBlock'><div class='caption'><p class='isQuestionMark'>?</p></div></div>";
-	}
+	}'
 document.getElementById('blankWord').innerHTML = chosenWordSpaces.join(" ");
